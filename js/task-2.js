@@ -4,8 +4,8 @@ function calcAverageCalories(days) {
   }
 
   let averageCalories = 0;
-  for (let i = 0; i < days.length; i += 1) {
-    averageCalories += days[i].calories;
+  for (const day of days) {
+    averageCalories += day.calories;
   }
   return averageCalories / days.length;
 }
